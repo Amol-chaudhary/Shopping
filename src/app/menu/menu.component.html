@@ -1,0 +1,156 @@
+<div id="mySidenav" class="sidenav" position="start">
+<a href="javascript:void(0)" class="closebtn" (click)="closeNav()">Back to menu</a><hr/>
+</div>
+<nav class="topnav">
+<div class="nav wrapper">
+<div class="row upper">
+<ul>
+<li>
+<img src="assets/logo.png" routerLink='/home' style="margin-left:50px;height:40px;margin-top:10px;cursor:pointer;">
+</li>
+<li> 
+<form class="example"  style="margin:auto;width:900px;margin-left:50px;margin-top:10px" #search='ngForm' (ngSubmit)="onSearch(search)">
+  <input type="text" name="search2" placeholder="Search product...." name="name" #name="ngModel" ngModel>
+  <button type="submit"><span style="font-size:25px;cursor:pointer;color:black;"><i class="material-icons" style="margin-top:-5px;">search</i></span></button>
+</form>     
+<li>
+</li>
+<li style="margin-left:-140px;">
+<a class="tooltip">
+Hello,{{firstName}} <span style="font-size:15px;cursor:pointer;">&#x290B;</span>
+<ul class="tooltiptext col l12" *ngIf="this.data == null; else notShow">
+<a routerLink="/login">Login</a><hr/>
+<a>About Deposite</a>
+<a>Help</a>
+<a>Information</a>
+</ul>
+<ng-template #notShow >
+<ul class="col l12 tooltiptextlogout">
+<a (click)="Logout()">Logout</a>
+<hr/>
+<a routerLink="/profile">Profile</a>
+<a>Help</a>
+<a>Information</a>
+</ul>
+</ng-template>
+</a></li>
+ <li><a style="margin-left:-10px;" class="tooltip">More <span style="font-size:15px;cursor:pointer;">&#x290B;</span>
+ <ul class="tooltiptextmore col l12 moredata">
+   <a>Services</a>
+   <a>Customer Care</a>
+   <a>data</a>
+ </ul>
+ </a></li>
+ <li><a routerLink="/card" style="margin-top:6px;height:55px;"><i class="material-icons large datapoint">shopping_cart</i><span class='badge badge-warning' id='lblCartCount'><b> {{cardcount}} </b></span></a></li>
+</ul>
+</div>
+<div class="row lower">  
+</div>
+</div>
+</nav>
+<nav class="white" id="lowestnav">
+<ul>
+<li>
+<a style="margin-top:-6px;margin-left:100px;" id="one">Electronic <span style="font-size:15px;cursor:pointer;">&#x290B;<div class="tooltiptextone col l12">
+<div class="col l4 card-panel light-white accent-4">
+<h6><b>Mobiles:</b></h6>
+<div *ngFor="let mobile of mobiles; let i = index" class="electonictext">
+<h6>{{mobile.type1}}</h6>
+</div>
+</div>
+<div class="col l4 card-panel light-white accent-4">
+<h6><b>Laptops:</b></h6>
+<div *ngFor="let mobile of laptops; let i = index" class="electonictext">
+<h6>{{mobile.type1}}</h6>
+</div>
+</div>
+<div class="col l4 card-panel light-white accent-4">
+<h6><b>TV:</b></h6>
+<div *ngFor="let mobile of Tv; let i = index" class="electonictext">
+<h6>{{mobile.name}}</h6>
+</div>
+</div>
+</div></span></a>
+</li>
+<li>
+<a style="margin-top:-6px;margin-left:10px;" id="two">Foods <span style="font-size:15px;cursor:pointer;">&#x290B;<div class="tooltiptextone col l12">
+<div class="col l4 card-panel light-white accent-4">
+<h6><b>Vegitables:</b></h6>
+<div *ngFor="let mobile of mobiles; let i = index" class="electonictext">
+<h6>{{mobile.type1}}</h6>
+</div><hr/>
+<h6><b>Masale:</b></h6>
+<div *ngFor="let mobile of Tv; let i = index" class="electonictext">
+<h6>{{mobile.name}}</h6>
+</div>
+</div>
+<div class="col l4 card-panel light-white accent-4">
+<h6><b>Ice Cream:</b></h6>
+<div *ngFor="let mobile of laptops; let i = index" class="electonictext">
+<h6>{{mobile.type1}}</h6>
+</div>
+</div>
+<div class="col l4 card-panel light-white accent-4">
+<h6><b>Fast Food:</b></h6>
+<div *ngFor="let mobile of Tv; let i = index" class="electonictext">
+<h6>{{mobile.name}}</h6>
+</div>
+</div>
+</div></span></a>
+</li>
+<li>
+<a style="margin-top:-6px;margin-left:10px;" id="three">Cloths <span style="font-size:15px;cursor:pointer;">&#x290B;<div class="tooltiptextone col l12">
+<div class="col l4 card-panel light-white accent-4">
+<h6><b>Sari:</b></h6>
+<div *ngFor="let mobile of mobiles; let i = index" class="electonictext">
+<h6>{{mobile.type1}}</h6>
+</div><hr/>
+<h6><b>Jeans:</b></h6>
+<div *ngFor="let mobile of Tv; let i = index" class="electonictext">
+<h6>{{mobile.name}}</h6>
+</div>
+</div>
+<div class="col l4 card-panel light-white accent-4">
+<h6><b>Children:</b></h6>
+<div *ngFor="let mobile of laptops; let i = index" class="electonictext">
+<h6>{{mobile.type1}}</h6>
+</div>
+</div>
+<div class="col l4 card-panel light-white accent-4">
+<h6><b>Formal Dress:</b></h6>
+<div *ngFor="let mobile of Tv; let i = index" class="electonictext">
+<h6>{{mobile.name}}</h6>
+</div>
+</div>
+</div></span></a>
+</li>
+<li>
+<a style="margin-top:-6px;margin-left:10px;" id="four">Books <span style="font-size:15px;cursor:pointer;">&#x290B;<div class="tooltiptextone col l12">
+<div class="col l4 card-panel light-white accent-4">
+<h6><b>Comedy Books:</b></h6>
+<div *ngFor="let mobile of mobiles; let i = index" class="electonictext">
+<h6>{{mobile.type1}}</h6>
+</div><hr/>
+<h6><b>Biography Books:</b></h6>
+<div *ngFor="let mobile of Tv; let i = index" class="electonictext">
+<h6>{{mobile.name}}</h6>
+</div>
+</div>
+<div class="col l4 card-panel light-white accent-4">
+<h6><b>Adventures Books:</b></h6>
+<div *ngFor="let mobile of laptops; let i = index" class="electonictext">
+<h6>{{mobile.type1}}</h6>
+</div>
+</div>
+<div class="col l4 card-panel light-white accent-4">
+<h6><b>History Books:</b></h6>
+<div *ngFor="let mobile of Tv; let i = index" class="electonictext">
+<h6>{{mobile.name}}</h6>
+</div>
+</div>
+</div></span></a>
+</li>
+<li routerLink="/product" id = "access" class="right">Add Product</li>
+  </ul>
+</nav>
+

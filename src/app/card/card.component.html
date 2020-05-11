@@ -1,0 +1,19 @@
+<h4> Card </h4>
+<div class="row " *ngFor="let room of data; let i = index" >
+<div *ngFor="let id of userdata; let i = index">
+<div class="col l12" style="margin-bottom:30px;">
+      <div class="col l4">
+          <img src="{{room.imageData}}" style="height:300px;width:200px;margin-top:20px;margin-bottom:20px;">
+          </div>
+        <div class = "col l8">
+        <h4><b>{{room.name}}</b></h4>
+        <p>rating:{{room.rating}}</p>
+        <p><b>description</b>:{{room.features}}</p>
+        <a class="waves-effect #ff6f00 amber darken-4 btn right" (click)="Buy(room.name)" style="margin-top:50px;"><i class="material-icons right">&#xf42d;</i>Buy now</a>
+        <a class="waves-effect #ff6f00 amber darken-4 btn left" (click)="deleteCard(id)" style="margin-top:50px;"><i class="material-icons right">&#xf42d;</i>Remove</a>
+        <br/><br/><br/><br/><br/><br/><hr/>
+        </div>
+</div>
+</div>
+</div>
+

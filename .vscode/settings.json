@@ -1,0 +1,8 @@
+{
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "python.terminal.executeInFileDir": true,
+    "python.terminal.launchArgs": [
+    
+    ]
+}

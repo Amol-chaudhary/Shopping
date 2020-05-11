@@ -1,0 +1,446 @@
+.sidenav {
+  height: 90%;
+  width: 0;
+  position: fixed;
+  margin-top: 11px;
+  z-index: 1;
+  top: 60px;
+  left: 0;
+  background-color: rgb(245, 249, 250);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin-left: 260px;
+}
+.topnav {
+  height: 70px;
+  background-color: rgb(89, 40, 110);
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+#lowestnav {
+  background-color: white;
+  height: 50px;
+}
+#lowestnav a {
+  color: #000;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+  color: #f1f1f1;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.fist-search {
+  background-color: burlywood;
+  color: white;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 44px;
+}
+#first-search-name {
+  height: 10px;
+  margin-bottom: 2px;
+}
+
+.closebtn {
+  top: 0;
+  width: 100%;
+  font-size: 20px !important;
+  margin-top: -60px;
+}
+.closebtn:hover {
+  background-color: #2196f3;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.upper {
+  height: 30px;
+}
+.upper li {
+  height: 25px;
+}
+.sidebutton {
+  background-color: rgb(108, 37, 136);
+}
+.fist-search span {
+  padding-right: 2px;
+}
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid grey;
+  float: left;
+  width: 55%;
+  background: #f9fbfc;
+  margin-left: 100px;
+  height: 22px;
+}
+
+form.example button.boot {
+  float: left;
+  width: 10%;
+  background: wheat;
+  color: white;
+  font-size: 10px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  height: 48px;
+  margin-bottom: 10px;
+}
+form.example button {
+  float: left;
+  width: 6%;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  height: 44px;
+}
+select {
+  border-bottom: none;
+}
+
+form.example button:hover {
+  background: #d9f1f1;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.upper a:hover {
+  background: rgb(67, 54, 185);
+  color: rgb(182, 188, 206);
+}
+.lower a:hover {
+  background: rgb(154, 182, 189);
+}
+.drop-data {
+  text-align: center;
+}
+#plot-deposite {
+  width: 250px;
+  height: 150px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.carousel {
+  height: 450px;
+}
+.lower {
+  height: 10px;
+}
+.select-wrapper {
+  margin-top: -6px;
+}
+.select-dropdown {
+  height: 20px;
+}
+.boot select {
+  font-size: 10px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 225px;
+  background-color: white;
+  color: rgb(116, 86, 86);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -120px;
+  margin-top: -30px;
+  text-transform: capitalize;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltiptext a {
+  color: rgb(116, 72, 72);
+  text-transform: capitalize;
+}
+.tooltiptextlogout a {
+  color: rgb(116, 72, 72);
+  text-transform: capitalize;
+}
+.tooltiptext li {
+  width: 300px;
+}
+.tooltiptextone a {
+  color: rgb(116, 72, 72);
+  text-transform: capitalize;
+}
+#one .tooltiptextone {
+  visibility: hidden;
+  width: 400px;
+  background-color: white;
+  color: rgb(116, 86, 86);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-top: -820px;
+  margin-left: -670px;
+  text-transform: capitalize;
+}
+.electonictext {
+  text-align: left;
+}
+
+#one .tooltiptextone::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+#one:hover .tooltiptextone {
+  visibility: visible;
+}
+.datalogin a {
+  width: 100%;
+  margin-top: -30px;
+  margin-left: -4px;
+}
+#lowestnav li {
+  color: rgb(95, 55, 55);
+}
+#two .tooltiptextone {
+  visibility: hidden;
+  width: 400px;
+  background-color: white;
+  color: rgb(116, 86, 86);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-top: -820px;
+  margin-left: -600px;
+  text-transform: capitalize;
+}
+
+#two .tooltiptextone::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+#two:hover .tooltiptextone {
+  visibility: visible;
+}
+#three .tooltiptextone {
+  visibility: hidden;
+  width: 400px;
+  background-color: white;
+  color: rgb(116, 86, 86);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-top: -820px;
+  margin-left: -500px;
+  text-transform: capitalize;
+}
+
+#three .tooltiptextone::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+#three:hover .tooltiptextone {
+  visibility: visible;
+}
+#four .tooltiptextone {
+  visibility: hidden;
+  width: 400px;
+  background-color: white;
+  color: rgb(116, 86, 86);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-top: -820px;
+  margin-left: -400px;
+  text-transform: capitalize;
+}
+
+#four .tooltiptextone::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+#four:hover .tooltiptextone {
+  visibility: visible;
+}
+.tooltip .tooltiptextlogout {
+  visibility: hidden;
+  width: 225px;
+  background-color: white;
+  color: rgb(116, 86, 86);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -120px;
+  margin-top: -30px;
+  text-transform: capitalize;
+}
+
+.tooltip .tooltiptextlogout::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptextlogout {
+  visibility: visible;
+}
+
+#four:hover .tooltiptextone {
+  visibility: visible;
+}
+.tooltip .tooltiptextmore {
+  visibility: hidden;
+  width: 225px;
+  background-color: white;
+  color: rgb(116, 86, 86);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -120px;
+  margin-top: -30px;
+  text-transform: capitalize;
+}
+
+.tooltip .tooltiptextmore::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptextmore {
+  visibility: visible;
+}
+.moredata a {
+  color: rgb(133, 100, 100);
+}
+.moredata a:hover {
+  background-color: #2196f3;
+  color: #000;
+}
+.badge {
+  margin-top: -30px;
+  border-radius: 5px;
+  width: 5px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+  font-size: 15px;
+  color: rgb(25, 216, 41);
+  vertical-align: top;
+  margin-left: -2px;
+  margin-top: -50px;
+}

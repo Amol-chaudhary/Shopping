@@ -1,0 +1,129 @@
+<div class="col l12">
+              <div class="card-panel light-white accent-4" style="width:500px;margin-left:400px">
+              <p>Product information</p><br/>
+                <form #employeeForm='ngForm' (ngSubmit)="onSubmit(employeeForm)">
+                  <label>
+                    Name:
+                     <input type="text" name="name" #name="ngModel" ngModel required>
+                  </label>
+                  <label>
+                    Description:
+                    <input type="text" name="description" #name="ngModel" ngModel required>
+                  </label>
+               <label>Gender*</label>
+                  <div className="input-field col s12">
+              <select name="gender" #name="ngModel" ngModel>
+                <option value="" disabled selected>
+                  Choose
+                </option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">other</option>
+              </select>
+            </div>
+            <label>Type*</label>
+                  <div className="input-field col s12">
+              <select name="type" #name="ngModel" ngModel>
+                <option value="" disabled selected>
+                  Choose
+                </option>
+                <option value="Protein_Suppliment">Protein Suppliment</option>
+                <option value="Cooking_&_Banking_Essentials">Cooking & Banking Essentials</option>
+                <option value="Breakfask_Essentials">Breakfask Essentials</option>
+                <option value="Masks">Masks</option>
+                <option value="Bath_&_Oral_Care">Bath & Oral Care</option>
+                <option value="Personal_Hygiene">Personal Hygiene</option>
+                <option value="Health_&_Safety">Health & Safety</option>
+                <option value="Diapers">Diapers</option>
+                <option value="Baby_Bath_&_Grooming ">Baby Bath & Grooming </option>
+                <option value="Detergents">Detergents</option>
+                <option value="Kichen_Cleaners_&_Scrub_Pads">Kichen Cleaners & Scrub Pads</option>
+                <option value="Mop_Sets">Mop Sets</option>
+              </select>
+            </div>
+             <label>
+                     Price:
+                  <input type="number" name="price" #name="ngModel" ngModel required>
+                  </label>
+                   <label>
+                     Rating:
+                  <input type="number" name="rating" #name="ngModel" ngModel required>
+                  </label>
+                   <label>
+                    Features:
+                     <input type="text" name="features" #name="ngModel" ngModel required>
+                  </label>
+                   <button type="submit" class="btn btn-danger blue right">
+                    Add Product Information
+                  </button>
+                   </form>
+                  <br/>
+                  <br/>
+                  <br/>  <hr/>
+                   <p>Product Review</p><br/>
+<form #employee='ngForm' (ngSubmit)="onReview(employee)">
+                  <label>
+                    Feedback:
+                     <input type="text" name="feedback" #name="ngModel" ngModel required>
+                  </label>
+                  <button type="submit" class="btn btn-danger blue right">
+                    Add Product Review
+                  </button><br/><br/><br/>
+                  </form>
+                  <hr/>
+                   <p>Product Comment</p><br/>
+<form #empl='ngForm' (ngSubmit)="onComment(empl)">
+                  <label>
+                    Question:
+                     <input type="text" name="question" #name="ngModel" ngModel required>
+                  </label>
+                  <label>
+                    Answer:
+                    <input type="text" name="answer" #name="ngModel" ngModel required>
+                  </label>
+                  <button type="submit" class="btn btn-danger blue right">
+                    Add Product Comment
+                  </button>
+                  <br/><br/>
+                  </form>
+                  <br/>
+                     <p>Image Upload</p><br/> 
+              <img
+                src = 'assets/Images/image.jpg'
+                class="circular--profile"
+                alt="profile"
+              />
+              <div class="simple-button">
+                <a
+                  class="waves-effect blue btn modal-trigger"
+                  href="#modal1"
+                  style="margin-left:40px"
+                >
+                  Update Photo
+                </a>
+                <div id="modal1" class="modal">
+                  <div class="file-field input-field">
+                    <div class="modal-content">
+                      <form method="post" enctype="multipart/form-data">
+                        <div class="btn">
+                          <span>File</span>
+                          <input type="file"
+                            (change)="uploadImage($event)" placeholder="Upload a file..." multiple
+                          />
+                        </div>
+                        <div class="file-path-wrapper">
+                          <input
+                            class="file-path validate"
+                            type="text"
+                            placeholder="Upload image"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                  </div>  
+                  </div>
+                  <br/><br/>
+                </div>
+              </div>
+              
+            </div>

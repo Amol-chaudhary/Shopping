@@ -1,0 +1,56 @@
+ <div class="card-panel light-white accent-4 col l12 button-add">
+          <div class="row">
+            <a
+              class="waves-effect waves-light btn modal-trigger right"
+              href="#modal1"
+            >
+              <i class="material-icons left">edit</i>ADD
+            </a>
+            <form #product='ngForm' (ngSubmit)="onSubmit(product)">
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h6>Bucket</h6>
+                  <label>
+                    Name:
+                      <input type="text" name="name" #name="ngModel" ngModel required>
+                  </label>
+                  <label>
+                    Description:
+                    
+                     <input type="text" name="description" #name="ngModel" ngModel required>
+                  </label>
+                </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="submit"
+                    class="waves-effect waves-green btn-flat"
+                  >
+                    Add
+                  </button>
+                  <a
+                    class="modal-close waves-effect waves-green btn-flat"
+                  >
+                    Cancel
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+            <table class="highlight css-serial">
+            <thead>
+              <tr>
+                <th scope="col">S.N</th>
+                <th scope="col">name</th>
+                <th scope="col">Description</th>
+                <th scope="col"> Date</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let room of products; let i = index">
+            <td></td>
+            <td><a [routerLink]="['/products', room._id]">{{room.name}}</a></td>
+            <td>{{room.description}}</td>
+            <td>{{room.created.substring(0,10)}}</td>
+            </tbody>
+          </table>  
+        </div>

@@ -1,0 +1,8 @@
+.hover11 img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover11:hover img {
+	opacity: .5;
+}

@@ -1,0 +1,26 @@
+a {
+  color: rgb(116, 96, 96);
+}
+.vl {
+  border-left: 2px solid rgb(111, 134, 111);
+  height: 700px;
+}
+#rating {
+  width: 40px;
+  height: 20px;
+  background-color: green;
+  color: white;
+  font-size: 13px;
+}
+#rating span {
+  margin-left: 10px;
+}
+#one {
+  text-transform: uppercase;
+}
+#change {
+  overflow: visible;
+}
+#info {
+  margin-left: 10px;
+}

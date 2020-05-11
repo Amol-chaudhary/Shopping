@@ -1,0 +1,99 @@
+<div class="background-add">
+<div class="row " style="margin-top:-28px">
+ <ul class="carousel carousel-slider">
+    <li class="carousel-item">
+    <a href='#!'>
+    <img src='assets/Images/image.jpg' class="responsive-img" style="width:1400px;height:480px;"/>
+    </a>
+    </li>
+    <li class="carousel-item">
+    <a href='#!'>
+    <img src='assets/Images/image2.jpg' class="responsive-img" style="width:1400px;height:480px;"/>
+    </a>
+    </li>
+    <li class="carousel-item">
+    <a href='#!'>
+    <img src='assets/Images/image1.jpg' class="responsive-img" style="width:1400px;height:480px;"/>
+    </a>
+    </li>   
+</ul>
+<div class="col l12 button-add">
+          <div class="row" style="margin-left:70px;">
+          <h4><a [routerLink]="['/allproductview', dashboardone[0].id]"><b>Food, Beverages & Supplement</b></a></h4>
+          </div>
+          <div class="row" style="margin-left:70px;">
+          <h5>For your Health</h5>
+          </div>
+      <div>
+       </div>
+       <div style="margin-left:40px">
+    <div class="col l3.9 card-panel #fce4ec pink lighten-5 leftdata" *ngFor="let room of dashboardone; let i = index">
+          <div class="col l6">
+          <img src="{{room.img}}">
+          </div>
+          <div class="col l6 data">
+            <h5><a [routerLink]="['/allproductview', room.id, room.type1]"><b>{{room.type}}</b></a></h5>
+          </div>
+      </div>
+      </div>
+<div class="col l12 button-add">
+          <div class="row" style="margin-left:70px;">
+          <h4><a [routerLink]="['/allproductview', dashboardtwo[0].id]"><b>Grooming & Hygiene</b></a></h4>
+          </div>
+          <div class="row" style="margin-left:70px;">
+          <h5>Everything your Family Needs</h5>
+          </div>
+      <div>
+      </div>
+      <div style="margin-left:40px">
+   <div class="col l3.9 card-panel #fce4ec pink lighten-5  leftdata" *ngFor="let room of dashboardtwo; let i = index">
+          <div class="col l6">
+          <img src="{{room.img}}">
+          </div>
+          <div class="col l6 data">
+            <h5><a [routerLink]="['/allproductview', room.id, room.type1]"><b>{{room.type}}</b></a></h5>
+          </div>
+      </div>
+      </div>
+          <div class="col l12 button-add">
+          <div class="row" style="margin-left:70px;">
+          <h4><a [routerLink]="['/allproductview', dashboardthree[0].id]"><b>Baby Care Essentials</b></a></h4>
+          </div>
+          <div class="row" style="margin-left:70px;">
+          <h5>For Little Bundle of Joy</h5>
+          </div>
+      <div>
+       </div>
+       <div style="margin-left:20px">
+    <div class="col l3.9 card-panel #fce4ec pink lighten-5  leftdata" *ngFor="let room of dashboardthree; let i = index">
+          <div class="col l6">
+          <img src="{{room.img}}">
+          </div>
+          <div class="col l6 data">
+            <h5><a [routerLink]="['/allproductview', room.id, room.type1]"><b>{{room.type}}</b></a></h5>
+          </div>
+      </div>
+      </div>
+      </div>
+       <div class="col l12 button-add">
+          <div class="row" style="margin-left:70px;">
+          <h4><a [routerLink]="['/allproductview', dashboardfour[0].id]"><b>Home Cleaning & Pet Supplies</b></a></h4>
+          </div>
+          <div class="row" style="margin-left:70px;">
+          <h5>For your Home & Furry Friends</h5>
+          </div>
+      <div>
+          </div>
+          <div style="margin-left:20px">
+    <div class="col l3.9 card-panel #fce4ec pink lighten-5  leftdata" *ngFor="let room of dashboardfour; let i = index">
+          <div class="col l6">
+          <img src="{{room.img}}">
+          </div>
+          <div class="col l6 data">
+            <h5><a [routerLink]="['/allproductview', room.id, room.type1]"><b>{{room.type}}</b></a></h5>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+

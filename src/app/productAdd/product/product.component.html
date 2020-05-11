@@ -1,0 +1,28 @@
+   <div class="row">
+            <a routerLink="/addproduct"
+              class="waves-effect waves-light btn modal-trigger right"
+            >ADD Product
+            </a>
+        </div><hr>
+        <div class="row" >
+    <div class="col l2" *ngFor="let room of products; let i = index">
+      <div class="card">
+        <div class="card-image hover11" >
+          <img src="{{room.imageData}}">
+        </div>
+        <div class="card-content">
+        <h6><b>{{room.name}}</b></h6>
+        <h5>Price:{{room.price}}</h5>
+        <h6>Ratings:5/{{room.rating}}</h6>
+        <a [routerLink]="['/productview', room._id]"
+           class="waves-effect waves-light btn modal-trigger left"
+            >Next
+            </a>
+         <a (click) = 'deletedata(room._id)'
+           class="waves-effect waves-light btn modal-trigger right"
+            >Delete
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>

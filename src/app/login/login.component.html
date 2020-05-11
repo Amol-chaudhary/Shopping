@@ -1,0 +1,27 @@
+ <div class="col l12" style="margin-top:-80px">
+              <div class="card-panel light-white accent-4" style="width:500px;margin-top:150px;margin-left:400px">
+              <h6>Sign in Waste</h6><br/><br/>
+                <form #employeeForm='ngForm' (ngSubmit)="onSubmit(employeeForm)">
+                  <label>
+                    Email address:
+                     <input type="text" name="email" #name="ngModel" ngModel required>
+                  </label>
+                  <label>
+                    Password:
+                     <input type="password" name="password" #name="ngModel" ngModel required>
+                  </label>
+                  <div class="form-group form-check">
+                    <label>
+                      <input type="checkbox" />
+                      <span>Stay signed in</span>
+                    </label>
+                  </div>
+                  <br />
+                  <button type="submit" class="btn btn-danger blue">
+                    Sign In
+                  </button><br/><br/>
+                    <a id="password">Forgot my password</a><br/>
+                    <a routerLink="/register">New To our website sign up</a>
+                </form>
+              </div>
+            </div>

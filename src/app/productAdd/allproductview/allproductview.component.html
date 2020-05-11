@@ -1,0 +1,27 @@
+<div *ngIf="checkdata">
+<div class="col l3">
+<app-filter></app-filter>
+</div>
+<div class="vl col l1"></div>
+<div>
+<div class="col l7" id="change">
+<div  style="margin-bottom:30px;" *ngFor="let room of data1; let i = index" >
+      <div class="col l4 ">
+          <a [routerLink]="['/productview', room._id]"><img src="{{room.imageData}}" style="height:300px;width:200px;margin-top:20px;margin-bottom:20px;"></a>
+          </div>
+        <div class = "col l8" >
+        <h4><a [routerLink]="['/productview', room._id]"><b>{{room.name}}</b></a></h4>
+        <p id="rating"><span class="center">{{room.rating}}&#x2605;</span></p>
+        <p><b>${{room.price}}</b></p>
+        {{checkdata}}
+        <p id ="one"><b>description:</b><br/>{{room.description}}</p>
+        <hr/>
+        <br/><br/><br/><br/>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+<div *ngIf="!checkdata">
+<h6 class="center" style="margin-top:200px;margin-bottom:200px;">Product not found please try again later</h6>
+</div>

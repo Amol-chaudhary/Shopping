@@ -3,22 +3,32 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --oot -prod"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~9.1.0",
+    "@angular/animations": "^9.1.1",
+    "@angular/cdk": "^9.2.1",
     "@angular/common": "~9.1.0",
     "@angular/compiler": "~9.1.0",
     "@angular/core": "~9.1.0",
+    "@angular/flex-layout": "^9.0.0-beta.29",
     "@angular/forms": "~9.1.0",
+    "@angular/material": "^9.2.1",
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",
+    "@types/jquery": "^3.3.35",
+    "angular2-materialize": "^15.1.10",
+    "axios": "^0.19.2",
+    "jquery": "^3.5.0",
+    "materialize-css": "^1.0.0-rc.2",
+    "ngx-spinner": "^9.0.2",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -43,5 +53,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
+  },
+  "engines": {
+    "node": "12.14.0",
+    "npm": "5.10.0"
   }
 }

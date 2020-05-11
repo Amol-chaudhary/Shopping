@@ -1,0 +1,16 @@
+.circular--profile {
+  border-radius: 50% 50%;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.simple-button {
+  margin-left: 220px;
+  margin-top: -100px;
+}

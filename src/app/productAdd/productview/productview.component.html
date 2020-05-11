@@ -1,0 +1,53 @@
+ <a class="waves-effect #ff6f00 amber darken-4 btn" (click) ="backpage()">Back To Menu</a>
+ <br/><br/>
+<div class="img-container row ">
+  <div class="img-zoom-lens col l1 container"></div>
+  <img id="my-image" (mousemove) = "imageZoom('my-image')" src="{{image}}"><br/>
+  <div class="col l8">
+  <div id="my-result" class="img-zoom-result">
+  </div>
+  <h5 class="sansserif">{{itemdata.name}}</h5>
+  <hr/>	
+  <p>Price:{{itemdata.price}}</p>
+  <br/>
+  <p>Features:{{itemdata.features}}</p>
+</div>
+</div>
+ <div class="row">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="waves-effect #ff8f00 amber darken-3 btn" (click)="AddCard()"><i class="material-icons right">&#xf218;</i>Add to card</a>&nbsp;&nbsp;
+  <a class="waves-effect #ff6f00 amber darken-4 btn" (click)="Buy(itemdata.name)"><i class="material-icons right">&#xf42d;</i>Buy now</a>
+  </div>
+<hr/>
+<div class="row" style="margin-left:20px;">
+ <b>Product Description:</b><br/>
+  <p>{{itemdata.description}}</p>
+</div>
+<hr/>
+<div class="row" style="margin-left:20px;">
+ <h6><b>Product detail:</b></h6>
+  <p>Shipping weight:100kg</p>
+  <p>Customers Review:{{itemdata.rating}}/5</p>
+</div>
+<hr/>
+<b>Customer questions and answers:</b><br/><br/>
+<input type="text" id="search" value="" (change)="Addquestion($event.target.value)" placeholder="Ask Question"/><br/><br/>
+<div class="row" style="margin-left:20px;" *ngFor="let room of commentdata; let i = index">
+  <h6><b>{{room.username}}</b></h6>
+  <p>Question:{{room.question}}</p>
+  
+  <div *ngIf="room.answer != null; else notShow">
+  <p>Answers:{{room.answer}}</p>
+</div>
+</div>
+<ng-template #notShow>
+  <p>
+    Waiting for answer
+  </p>
+</ng-template>
+<hr/>
+<div class="row" style="margin-left:20px;" *ngFor="let room of reviewdata; let i = index">
+ <b>Customer Review:</b><br/>
+ <h6>{{room.username}}</h6>
+ <p>{{room.feedback}}<p>
+</div>
+

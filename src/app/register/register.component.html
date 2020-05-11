@@ -1,0 +1,107 @@
+ <br/><br/>
+ <div class="col l12">
+              <div class="card-panel light-white accent-4" style="width:700px;margin-left:300px">
+              <h5>Sign Up</h5><br/>
+              <p>Contact information</p><br/>
+                <form #employeeForm='ngForm' (ngSubmit)="onSubmit(employeeForm)">
+                <div class="row">
+                  <div class="col l4">
+                  <label>
+                    FIRST NAME:
+                     <input type="text" name="first" #name="ngModel" ngModel required>
+                  </label>
+                  </div>
+                  <div class="col l4">
+                  <label>
+                    LAST NAME:
+                    <input type="text" name="last" #name="ngModel" ngModel required>
+                  </label>
+                  </div>
+                  <div class="col l4">
+                  <label>
+                    NICKNAME:
+                     <input type="text" name="nickname" #name="ngModel" ngModel required>
+                  </label>
+                  </div>
+                  </div>
+                  <label>
+                    ADDERESS1*:
+                    <input type="text" name="address_1" #name="ngModel" ngModel required>
+                  </label>
+                  <label>
+                     ADDERESS2*:
+                    <input type="text" name="address_2" #name="ngModel" ngModel required>
+                  </label>
+                  <div class="row">
+                  <div class="col l4" id="adjudy">
+                  <label >
+                     CITY:
+                     <input type="text"  name="city" #name="ngModel" ngModel required>
+                  </label>
+                  </div>
+                  <div class="col l4">
+                   <label>STATE*</label>
+                  <div class="input-field col s12">
+              <select name="state" #name="ngModel" ngModel>
+                <option value="" disabled selected>
+                  Choose
+                </option>
+                <option value="MAHARASHTRA">MAHARASHTRA</option>
+                <option value="DILHI">DILHI</option>
+                <option value="KOLKATA">KOLKATA</option>
+              </select>
+            </div>
+            </div>
+                  <div class="col l4">
+               <label>Gender*</label>
+                  <div class="input-field col s12">
+              <select name="gender" #name="ngModel" ngModel>
+                <option value="" disabled selected>
+                  Choose
+                </option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">other</option>
+              </select>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+                  <div class="col l6">
+             <label>
+                     ZIP CODE:
+                  <input type="number" name="pincode" #name="ngModel" ngModel required>
+
+                  </label>
+                  </div>
+                  <div class="col l6">
+                   <label>
+                     PHONE NUMBER:
+                  <input type="number" name="phone" #name="ngModel" ngModel required>
+
+                  </label>
+                  </div>
+                  </div>
+              <p>Account information</p><br/>
+              <label>
+                     EMAIL ADDERESS:
+              <input type="email" name="email" #name="ngModel" ngModel required>
+
+                  </label>
+                  <label>
+                     PASSWORD:
+                  <input type="password" name="password" #name="ngModel" ngModel required>
+
+                  </label>
+                  <label>
+                     CONFIRM PASSWORD :
+                <input type="text" name="confirm" #name="ngModel" ngModel required>
+                  </label>
+                  <br/>
+                  <br/>
+                  <button type="submit" class="btn btn-danger blue centerbutton">
+                    Sign up
+                  </button>
+                </form>
+              </div>
+            </div>
